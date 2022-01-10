@@ -14,7 +14,7 @@ if (localStorage.getItem("tasks")) {
  // Click on task Element 
 
  achievements.addEventListener("click" , (e)=>{
-     if (e.target.classList.contains("far")) {
+     if (e.target.classList.contains("del")) {
         //  Remove Element From Page
         e.target.parentElement.remove();
         // remove Task To local Storage 
@@ -58,8 +58,9 @@ function addTaskToPage(itemsArray){
         }
         div.setAttribute("data-id" , task.id);
         div.append(document.createTextNode(task.title));
-        let deletebtn =  document.createElement("i");
-        deletebtn.className = "far fa-trash-alt";
+        let deletebtn =  document.createElement("span");
+        deletebtn.appendChild(document.createTextNode("Delete"))
+        deletebtn.className = "del";
         div.appendChild(deletebtn);
         achievements.appendChild(div);
 

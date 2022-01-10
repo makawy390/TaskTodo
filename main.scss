@@ -85,15 +85,17 @@ body{
                 text-decoration: line-through;
                 opacity: 0.6;
             }
-            .far{
+            .del{
                 font-size: 20px;
                 cursor: pointer;
                 position: absolute;
-                top: 32%;
-                right: 20px;
-                transition: 0.5s;
-                color: #009688;
-               
+                top: 20%;
+                right: 10px;
+                background-color: #009688;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 16px;
             }
     }
 }
